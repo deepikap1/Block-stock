@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>STOCK EXCHANGE MARKET</title>
+ <link href='https://fonts.googleapis.com/css?family=Open Sans:400,700' rel='stylesheet' type='text/css'>
+ <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+</head>
+<body class="container">
+ <h1>STOCK EXCHANGE MARKET</h1>
+ <p></p>
+ <hr>
+ <p></p>
+ <div class="table-responsive">
+  <table class="table table-bordered">
+   <thead>
+    <tr>
+     <th>FirmID</th>
+     <th>Number of Stocks</th>
+     <th>Stock Price</th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr>
+     <td>0</td>
+     <td id="firm-0quantity">1000</td>
+     <td id="firm-0price">100</td>
+    </tr>
+    <tr>
+     <td>1</td>
+     <td id="firm-1quantity">2000</td>
+     <td id="firm-1price">200</td>
+    </tr>
+    <tr>
+     <td>2</td>
+     <td id="firm-2quantity">3000</td>
+     <td id="firm-2price">300</td>
+    </tr>
+   </tbody>
+  </table>
+ </div>
+ <br>
+ <input type="number" placeholder="FirmID" id="id" /><p></p>
+ <input type="number" placeholder="Quantity" id="quantity" /><p></p> 
+ <a href="#" onclick="buy()" class="btn btn-primary">BUY</a>
+ <p></p>
+ <p></p>
+ <h2>My Account</h2>
+ <div class="table-responsive">
+  <table class="table table-bordered">
+   <thead>
+    <tr>
+     <th>FirmID</th>
+     <th>Stocks owned</th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr>
+     <td>0</td>
+     <td id="firm-0owned">0</td>
+    </tr>
+    <tr>
+     <td>1</td>
+     <td id="firm-1owned">0</td>
+    </tr>
+    <tr>
+     <td>2</td>
+     <td id="firm-2owned">0</td>
+    </tr>
+    <tr>
+     <td><b>Total Balance</b></td>
+     <td id="balance">10000</td>
+    </tr>    
+   </tbody>
+  </table>
+ </div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.0.0-beta.37/dist/web3.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+<script src="./index.js"></script>
+</html>
